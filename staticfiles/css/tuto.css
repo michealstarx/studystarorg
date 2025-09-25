@@ -1,0 +1,22 @@
+p{
+        font-family: arial;
+        text-align: center;
+        margin-top: 14;
+        margin-bottom: 14;
+        list-style: none;
+        
+};
+li{
+        font-family: arial;
+        text-align: center;
+        margin-top: 20;
+        margin-bottom: 20;
+        
+};
+h1{
+        text-align: center; 
+        text-decoration: underline; 
+        font-family: "tahoma"; 
+        text-decoration-color: rgb(16, 167, 200);
+        font-weight: 900;
+}

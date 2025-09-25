@@ -1,0 +1,139 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/smartifyDetails.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Smartify Details Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="btn-menu" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="selected" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <div class='container' style="background-color: rgb(250,250,250); border-radius: 9">
+            <h1 style="
+                text-align: center ;
+                text-decoration: underline; 
+                font-family: 'Newsreader', serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+                padding-top: 10px
+            ">{{item.title}}</h1>
+            <p style="text-align: right"><small>{{item.date}}</small><br/><small>{{item.time}}</small></p>
+            <p style="text-align: center"><img src={{item.firstImage}} width=270px alt={{item.title} style="border-radius: 7px"/></p>
+            <p class="paragraph">{{item.introFirst}}</p>
+            <p class="paragraph">{{item.introSecond}}</p>
+            <p class="paragraph">{{item.introThird}}</p>
+            <p class="paragraph">{{item.introFourth}}</p>
+            <p style="text-align: center"><img src={{item.secondImage}} width=270px alt={{item.title} style="border-radius: 7px"/></p>
+            <p class="headerParagraphs">{{item.fparaBoldOne}}</p>
+            <p class="paragraph">{{item.firstParagraphOne}}</p>
+            <p class="paragraph">{{item.firstParagraphTwo}}</p>
+            <p class="paragraph">{{item.firstParagraphThree}}</p>
+            <p class="paragraph">{{item.firstParagraphFour}}</p>
+            <p class="headerParagraphs">{{item.firstParagraphBoldTwo}}</p>
+            <p class="paragraph">{{item.firstParagraphFive}}</p>
+            <p class="paragraph">{{item.firstParagraphSix}}</p>
+            <p class="paragraph">{{item.firstParagraphSeven}}</p>
+            <p class="paragraph">{{item.firstParagraphEight}}</p>
+            <p class="headerParagraphs">{{item.firstParagraphBoldThree}}</p>
+            <p class="paragraph">{{item.firstParagraphNine}}</p>
+            <p class="paragraph">{{item.firstParagraphTen}}</p>
+            <p class="paragraph">{{item.firstParagraphEleven}}</p>
+            <p class="paragraph">{{item.firstParagraphTwelve}}</p>
+            <p class="headerParagraphs">{{item.firstParagraphBoldFour}}</p>
+            <p class="paragraph">{{item.firstParagraphThirteen}}</p>
+            <p class="paragraph">{{item.firstParagraphFourteen}}</p>
+            <p class="paragraph">{{item.firstParagraphFifteen}}</p>
+            <p class="paragraph">{{item.firstParagraphSixteen}}</p>
+            <p class="headerParagraphs">{{item.firstParagraphBoldFive}}</p>
+            <p class="paragraph">{{item.firstParagraphSeventeen}}</p>
+            <p class="paragraph">{{item.firstParagraphEighteen}}</p>
+            <p class="paragraph">{{item.firstParagraphNineteen}}</p>
+            <p class="paragraph">{{item.firstParagraphTwenty}}</p>
+            <p class="headerParagraphs">{{item.firstParagraphBoldSix}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentyone}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentytwo}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentythree}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentyfour}}</p>
+            <p class="headerParagraphs">{{item.firstParagraphBoldSeven}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentyfive}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentysix}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentyseven}}</p>
+            <p class="paragraph">{{item.firstParagraphTwentyeight}}</p>
+
+
+
+
+            <p style="text-align: center"><img src={{item.thirdImage}} width=270px alt={{item.title} style="border-radius: 7px"/></p>
+           
+           
+            <p class="headerParagraphs">{{item.secondParagraphBoldOne}}</p>
+            <p class="paragraph">{{item.secondParagraphOne}}</p>
+            <p class="paragraph">{{item.secondParagraphTwo}}</p>
+            <p class="paragraph">{{item.secondParagraphThree}}</p>
+            <p class="paragraph">{{item.secondParagraphFour}}</p>
+            <p class="headerParagraphs">{{item.secondParagraphBoldTwo}}</p>
+            <p class="paragraph">{{item.secondParagraphFive}}</p>
+            <p class="paragraph">{{item.secondParagraphSix}}</p>
+            <p class="paragraph">{{item.secondParagraphSeven}}</p>
+            <p class="paragraph">{{item.secondParagraphEight}}</p>
+            <p class="headerParagraphs">{{item.secondParagraphBoldThree}}</p>
+            <p class="paragraph">{{item.secondParagraphNine}}</p>
+            <p class="paragraph">{{item.secondParagraphTen}}</p>
+            <p class="paragraph">{{item.secondParagraphEleven}}</p>
+            <p class="paragraph">{{item.secondParagraphTwelve}}</p>
+            <p class="headerParagraphs">{{item.secondParagraphBoldFour}}</p>
+            <p class="paragraph">{{item.secondParagraphThirteen}}</p>
+            <p class="paragraph">{{item.secondParagraphFourteen}}</p>
+            <p class="paragraph">{{item.secondParagraphFifteen}}</p>
+            <p class="paragraph">{{item.secondParagraphSixteen}}</p>
+            <p class="headerParagraphs">{{item.secondParagraphBoldFive}}</p>
+            <p class="paragraph">{{item.secondParagraphSeventeen}}</p>
+            <p class="paragraph">{{item.secondParagraphEighteen}}</p>
+            <p class="paragraph">{{item.secondParagraphNineteen}}</p>
+            <p class="paragraph">{{item.secondParagraphTwenty}}</p>
+            <p class="headerParagraphs">{{item.secondParagraphBoldSix}}</p>
+            <p class="paragraph">{{item.secondParagraphTwentyone}}</p>
+            <p class="paragraph">{{item.secondParagraphTwentytwo}}</p>
+            <p class="paragraph">{{item.secondParagraphTwentythree}}</p>
+            <p class="paragraph">{{item.secondParagraphTwentyfour}}</p>
+            <p class="headerParagraphs">{{item.secondParagraphBoldSeven}}</p>
+            <p class="paragraph">{{item.secondParagraphTwentyfive}}</p>
+            <p class="paragraph">{{item.secondParagraphTwentysix}}</p>
+            <p class="paragraph">{{item.secondParagraphTwentyseven}}</p>
+            <p style="text-align: center"><img src="../../static/images/smartify/end.jpeg" width=270px alt={{item.title}}/></p>
+            <p style="text-indent: 20px; text-align: right"> <b>◼ Posted by</b>: {{item.poster}}</p>
+            <p style="text-indent: 20px; text-align: right"> <b>◼ Position</b>: {{item.position}}</p>
+        </div>
+
+        
+    </main>
+{% endblock body %}

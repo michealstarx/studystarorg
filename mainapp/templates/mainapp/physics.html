@@ -1,0 +1,269 @@
+{% extends 'mainapp/basetutorials.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/physics.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Podcasts Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="selected" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">PHYSICS PAGE</h1>
+        <div class='grade10'>
+            <h3 style="text-align: center; font-size: 25px; font-family: 'tahoma sans-serif'; font-weight: bolder; color: rgb(12, 245, 96); background-color: rgb(11, 53, 126); padding: 15px;">Grade Ten</h3>
+            <div class="topicCon10">
+              <h4 class="topicSelector"><x style='color: #0066FF'>Introduction to Physics</x><br/><span class='badge' style='color: yellow'>FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1Qyinjn5YlooApB3CqSsSfDBT8a22uI3t&export=download'><img src="../../static/images/tutorials/sr/phy/introduction to physics.png" height=187.04px width=132.32px class="imb" alt="Introduction to Physics" class="products"/></a></p>
+              <p class="linkCon"><a href='/introduction_to_physics' class="link10">Brain Booster</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1mEeKSkYbEMFj837MTXd552EjWaltqE3v&export=download' class="link10">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1cOUTngzDDZB7Hw7Yn0XjxZlZL52wRMyZ&export=download' class="link10">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon10">
+              <h4 class="topicSelector">Mass, Weight, Volume & Density<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1XSKLUPS3kEXPTCL-_JsLqYFrxHoh2nMH&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/mass, weight, volume and density.png" height=187.04px width=132.32px class="imb" alt="Mass, Weight, Volume & Density" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link10">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=15fXBEf97BT-WgFRwuX__LiQGePn5MDfb&export=download' class="link10">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1VfJqKWdI7cqYFXFbBM9T5EPNRnL37z7b&export=download' class="link10">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon10">
+              <h4 class="topicSelector">Forces<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1wp0a03Mv0bHckTptgXchW1VBICGkKyzS&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/forces.png" height=187.04px width=132.32px class="imb" alt="Forces" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link10">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1RlUdePvDa3xyuKhgLJFCy3jfpFFP1TGW&export=download' class="link10">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=12X4ph0BjpVmMPJ2qEi7lvrg4b5zNzVxh&export=download' class="link10">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon10">
+              <h4 class="topicSelector">Mechanics<br/><span class='badge' style='color: yellow'>FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1Y2_P9h9nfLVRll8bzksaj6fn9IdhBPPy&export=download'><img src="../../static/images/tutorials/sr/phy/mechanics.png" height=187.04px width=132.32px class="imb" alt="Mechanics" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link10">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=10zFHY91RoFCytIyfPw8hkcV4HxRTfg9a&export=download' class="link10">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1P4ixhUo9HQjz5UydQ4QuLwqcdToPEFv5&export=download' class="link10">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon10">
+              <h4 class="topicSelector">Moments of a Force<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1ED5aB7T82aEVfXvC7LzolNl8W-ZwQk0J&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/moment of a force.png" height=187.04px width=132.32px class="imb" alt="Moments of a Force" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link10">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='' class="link10">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='' class="link10">Practice Test Answers</a></p> 
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            </div>
+      
+      
+      
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class='grade11'>
+            <h3 style="text-align: center; font-size: 25px; font-family: 'tahoma sans-serif'; font-weight: bolder; color: gold; padding-top: 20px; background-color: rgb(0, 176, 121); padding: 15px;">Grade Eleven</h3>
+            <div class="topicCon11">
+              <h4 class="topicSelector"><x style='color: #0066FF'>Thermal Physics</x><br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=17o6wsU4oQJrZ53sSaPcIKXoe06FmQyGy&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/thermal physics.png" height=187.04px width=132.32px class="imb" alt="Thermal Physics" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link11">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='' class="link11">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='' class="link11">Practice Test Answers</a></p> 
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon11">
+              <h4 class="topicSelector">Gas Laws<br/><span class='badge' style='color: rgb(0,176,80)'>FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1U-Nkn0tRpKmvlZr9oMIxbPcgYghYWGos&export=download'><img src="../../static/images/tutorials/sr/phy/gas laws.png" height=187.04px width=132.32px class="imb" alt="Gas Laws" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link11">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1-2oT88ZXr_AChokZjzBgnidUGvtxTS4-&export=download' class="link11">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1BE0k2yCvhfzk1IV88VyoHXaMOsLdIcRJ&export=download' class="link11">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon11">
+              <h4 class="topicSelector">Waves<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1uNS2q9UaeCb3DDGy6IFWSon7OHyZVkd9&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/wave motion and sound.png" height=187.04px width=132.32px class="imb" alt="Waves" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link11">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1Rgx3AI0M1ij13Vfof68V4A5bRpRJ3_Gu&export=download' class="link11">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=17d_8T-kz1LRzP8nBDeLUWzqdpK5UTafV&export=download' class="link11">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon11">
+              <h4 class="topicSelector">Light<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1GDF_0qrHmbP6is1UBRQ9JSWyKiKV88M1&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/light.png" height=187.04px width=132.32px class="imb" alt="Light" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link11">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=11eAdZgCbTJC3zEcA1YJzJp7B9DaqN0NP&export=download' class="link11">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1VoFcah7_SG83YKMhy0rFkiAL89xIyJwC&export=download' class="link11">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon11">
+              <h4 class="topicSelector">Work, Energy and Power<br/><span class='badge' style='color: rgb(0,176,80)'>FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1GOKmdbcFgLFCX8KIr2QUPpQf6Hryg3Ie&export=download'><img src="../../static/images/tutorials/sr/phy/work, energy and power.png" height=187.04px width=132.32px class="imb" alt="Work, Energy and Power" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link11">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1J3fJWpqjY4onYVX0O9Vj7isp3mFD6cx8&export=download' class="link11">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=169zNgDQrkI6hlRI6qjfnwcc8ZwhGNEaw&export=download' class="link11">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon11">
+              <h4 class="topicSelector">Simple Machines<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1maC8lYGWg3W5kfb5U5mGSOqe3GdvC9Kf&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/simple machines.png" height=187.04px width=132.32px class="imb" alt="Simple Machines" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link11">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1iQcIWMLjufbCj-hQeKN5THTTM5_tUk8v&export=download' class="link11">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=144OJSdpqehFUCxgTCdPcLNiEfdT8L-s4&export=download' class="link11">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class='grade12'>
+            <h3 style="text-align: center; font-size: 25px; font-family: 'tahoma sans-serif'; font-weight: bolder; color: red; background-color: rgb(64, 255, 0); padding: 15px;">Grade Twelve</h3>
+            <div class="topicCon12">
+              <h4 class="topicSelector"><x style='color: #0066FF'>Magnetism</x><br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1Z9TrKai0dRVBN6FGhHt1PNDViOtj3bXa&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/magnetism.png" height=187.04px width=132.32px class="imb" alt="Magnetism" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link12">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1ih7cn8uQCMMsCwZdvuYvOyEMXaC3IH-A&export=download' class="link12">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1DgvHhY8MNe_BEdsmBl1vSSDr_zMdbcLK&export=download' class="link12">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon12">
+              <h4 class="topicSelector">Electromagnetism<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1-GlbcRtWN3KxC8JK0PFiV9xgLHUrhgJL&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/electromagnetism.png" height=187.04px width=132.32px class="imb" alt="Electromagnetism" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link12">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='' class="link12">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='' class="link12">Practice Test Answers</a></p> 
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon12">
+              <h4 class="topicSelector">Electricity<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1fTDmca41BImjagpjTt8xiqAFFSthQDTT&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/electricity.png" height=187.04px width=132.32px class="imb" alt="Electricity" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link12">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1A3Ro5gWLQtXzXrjMbeN4ryb5axQNQaEV&export=download' class="link12">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1QLcZTZFU4xt_HG4B8W_fPrKGAOdN9xsz&export=download' class="link12">Practice Test Answers</a></p>
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon12">
+              <h4 class="topicSelector">Electromagnetic Induction<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1dOQG1nM6cv_XZr2fNdqJH88FxzpqNI9e&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/phy/electromagnetic induction.png" height=187.04px width=132.32px class="imb" alt="Electromagnetic Induction" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link12">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='' class="link12">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='' class="link12">Practice Test Answers</a></p> 
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            <div class="topicCon12">
+              <h4 class="topicSelector">RadioActivity<br/><span class='badge' style='color: yellow'>FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1UPaWDP7RioI5oeIXK1BfifqzqmiC1BKb&export=download'><img src="../../static/images/tutorials/sr/phy/radioactivity.png" height=187.04px width=132.32px class="imb" alt="RadioActivity" class="products"/></a></p>
+              <p class="linkCon"><a href='' class="link12">Brain Booster</a><br/></p> 
+              <p class="linkCon"><a href='' class="link12">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='' class="link12">Practice Test Answers</a></p> 
+              <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            </div>
+    </main>
+{% endblock body %}

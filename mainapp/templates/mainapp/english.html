@@ -1,0 +1,175 @@
+{% extends 'mainapp/basetutorials.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/english.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Podcasts Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="selected" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">ENGLISH PAGE</h1>
+        <h3 style="text-align: center; font-size: 40px; font-family: 'tahoma sans-serif'; font-weight: bolder; color: rgb(0, 255, 0)">Grade Ten - Twelve</h3>
+      <div class="grade">
+        <div class="topicCon">
+          <h4 class="topicSelector"><x style='color: #0066FF'>Introduction to English</x><br/><span class='badge' style='color: rgb(0,176,80)'>FREE</span></h4>
+          <p class="image"><a href='https://drive.google.com/uc?id=1eqeI6gv-0v8JEfnGfFLzY1N9pRXPM_pX&export=download'><img src="../../static/images/tutorials/sr/eng/introduction to english.png" height=187.04px width=132.32px class="imb" alt="Introduction to English" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Grammar and Punctuations<br/><span class='badge' style='color: rgb(0,176,80)'>FREE</span></h4>
+          <p class="image"><a href='https://drive.google.com/uc?id=1U2Alp96I2mvsD9vyjoeZZd5SlHb17mYe&export=download'><img src="../../static/images/tutorials/sr/eng/grammar and punctuations.png" height=187.04px width=132.32px class="imb" alt="Grammar and Punctuations" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+        <div class="topicCon">
+          <h4 class="topicSelector">Narrative Composition<br/><span class='badge' style="color: red">4 ZMW</span></h4>
+          <p class="image"><!-- <a href='https://drive.google.com/uc?id=15ngp6nf5YQ9eT8WwBLWhieb2A3_-Cs-q&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/eng/narrative composition.png" height=187.04px width=132.32px class="imb" alt="Narrative Composition" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Comprehension<br/><span class='badge' style='color: rgb(0,176,80)'>FREE</span></h4>
+          <p class="image"><a href='https://drive.google.com/uc?id=1hVD6VN5o86X_8zJItSU4KysWjAoWPiho&export=download'><img src="../../static/images/tutorials/sr/eng/comprehension.png" height=187.04px width=132.32px class="imb" alt="Comprehension" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Summary<br/><span class='badge' style='color: rgb(0,176,80)'>FREE</span></h4>
+          <p class="image"><a href='https://drive.google.com/uc?id=1DpWclo0vy0Uh3U7BrYgspA3ybZNNQMXC&export=download'><img src="../../static/images/tutorials/sr/eng/summary.png" height=187.04px width=132.32px class="imb" alt="Summary" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Comparison<br/><span class='badge' style="color: red">4 ZMW</span></h4>
+          <p class="image"><!-- <a href='https://drive.google.com/uc?id=1hVD6VN5o86X_8zJItSU4KysWjAoWPiho&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/eng/comparison.png" height=187.04px width=132.32px class="imb" alt="Comparison" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Contrast<br/><span class='badge' style="color: red">4 ZMW</span></h4>
+          <p class="image"><!-- <a href='https://drive.google.com/uc?id=13pGDqx760BrIBEYQ9hO_FtvY6ywkhmlw&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/eng/contrast.png" height=187.04px width=132.32px  class="imb" alt="Contrast" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Condition<br/><span class='badge' style='color: rgb(0,176,80)'>FREE</span></h4>
+          <p class="image"><a href='https://drive.google.com/uc?id=1TsP81-ToBdtlPgaL21qPKX25pU04X3ui&export=download'><img src="../../static/images/tutorials/sr/eng/condition.png" height=187.04px width=132.32px class="imb" alt="Condition" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Direct and Indirect Speech<br/><span class='badge' style="color: red">4 ZMW</span></h4>
+          <p class="image"><!-- <a href='https://drive.google.com/uc?id=1TyqwbzAXnDFglnmZ_804TRG_JSitRemV&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/eng/direct and indirect speech.png" height=187.04px width=132.32px class="imb" alt="Direct and Indirect Speech" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Reason<br/><span class='badge' style="color: red">4 ZMW</span></h4>
+          <p class="image"><!-- <a href='https://drive.google.com/uc?id=1Gj1QKfkLFVQIpEG3iJ0PuY6muFrHEswg&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/eng/reason.png" height=187.04px width=132.32px class="imb" alt="Reason" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+
+        <div class="topicCon">
+          <h4 class="topicSelector">Time<br/><span class='badge' style="color: red">4 ZMW</span></h4>
+          <p class="image"><!-- <a href='https://drive.google.com/uc?id=1Sd4tOQwqXxCB3U7ODWmBfkk4K1HvuuXt&export=download'> --><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/eng/time.png" height=187.04px width=132.32px class="imb" alt="Time" class="products"/></a></p>
+           <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p> 
+           <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p>
+          <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+           <!-- <p>
+            <audio src='' controls="controls" style='width: 96%'></audio>
+            <video src='' height={150} width={250} controls="controls"></video>
+          </p>  -->
+        </div>
+      </div>
+    </main>
+{% endblock body %}

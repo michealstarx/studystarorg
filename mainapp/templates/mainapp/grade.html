@@ -1,0 +1,48 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/grade.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Grade Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="selected" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">Select Subject</h1>
+        <div class="subject-btns" style="text-align: center;">
+            <div class="btn-each-container"><a href="{% url 'biologyPage' %}" class="btn-each">BIOLOGY</a></div>
+            <div class="btn-each-container"><a href="{% url 'chemistryPage' %}" class="btn-each">CHEMISTRY</a></div>
+            <div class="btn-each-container"><a href="{% url 'englishPage' %}" class="btn-each">ENGLISH</a></div>
+            <div class="btn-each-container"><a href="{% url 'mathematicsPage' %}" class="btn-each">MATHEMATICS</a></div>
+            <div class="btn-each-container"><a href="{% url 'physicsPage' %}" class="btn-each">PHYSICS</a></div>
+        </div>
+    </main>
+{% endblock body %}

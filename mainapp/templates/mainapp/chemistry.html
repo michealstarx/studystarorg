@@ -1,0 +1,279 @@
+{% extends 'mainapp/basetutorials.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/chemistry.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Podcasts Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="selected" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">CHEMISTRY PAGE</h1>
+
+        <h3 style="text-align: center; font-size: 20; font-family: 'tahoma'; color: rgb(12, 245, 96); background-color: rgb(11, 53, 126); padding: 15px;">Grade Ten</h3>
+        <div class="grade10">
+        <div class="topicCon">
+            <h4 style="color: 'rgb(0, 128, 255)'">Introduction to Chemistry<br/><span className='badge' class="new">FREE</span></h4>
+            <p class="image"><a href='https://drive.google.com/uc?id=15BkUsMLUTxnUS3W9MWTloxqXFiQzIuT_&export=download'><img src="../../static/images/tutorials/sr/che/introduction to chemistry.png" height=187.04px width=132.32px alt="Introduction to Chemistry"/></a></p>
+            
+            <!-- <p class="linkCon"><a href='/introduction_to_chemistry' class="link">Brain Booster</a><br/></p> -->
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1P3pbk_xCRqTr9k8GueRTtWwzK2EcgfGy&export=download' class="link">Practice Test</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1lh5anQSeSeWg61rbV4a9dlgBoVkHnwCf&export=download' class="link">Practice Test Answers</a></p>
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        
+        <div class="topicCon">
+            <h4 class="topicSelector">Apparatus Techniques<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1OSzUFtvCJO7ior2G0dBVDmPQ7ZxX-olU&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/apparatus techniques.png" height=187.04px width=132.32px alt="Apparatus Techniques"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+             <!-- <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p> -->
+            <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p> 
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+
+        <div class="topicCon">
+            <h4 class="topicSelector">Separation Techniques<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1duk0BlvG3u759MzR63lB68xOdzq6Lqmq&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/separation techniques.png" height=187.04px width=132.32px alt="Separation Techniques"/></a></p>
+            
+            <p class="linkCon"><a href='/separation_techniques' class="link">Brain Booster</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1N-ABBDDGxHRcLakjEE_0PK5KWZrmGwCu&export=download' class="link">Practice Test</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1MOT1X_miygFs_epqvDDtszkYtt-U9Ksk&export=download' class="link">Practice Test Answers</a></p>
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+
+        <div class="topicCon">
+            <h4 class="topicSelector">Atomic Structure<br></br><span className='badge' class="new">FREE</span></h4>
+            <p class="image"><a href='https://drive.google.com/uc?id=1RuwSCSwQJ4wryoeM0z2vDFQ_jjhzu1pw&export=download'><img src="../../static/images/tutorials/sr/che/atomic structure.png" height=187.04px width=132.32px alt="Atomic Structure"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+             <!-- <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p> -->
+            <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p> 
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+
+        <div class="topicCon">
+            <h4 class="topicSelector">Bonding<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1A-Y9ZF8J9fgs5-f-K-CD4JMelFMspXVe&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/bonding.png" height=187.04px width=132.32px alt="Bonding"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+             <!-- <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p> -->
+            <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p> 
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+
+        <div class="topicCon">
+            <h4 class="topicSelector">Elements, Mixtures and Compounds<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1wembJp1sd-PvohWtU-T-qCcauFpBlvBZ&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/elements, mixtures and compounds.png" height=187.04px width=132.32px alt="Elements, Mixtures and Compounds"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+             <!-- <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p> -->
+            <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p> 
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+
+        <div class="topicCon">
+            <h4 class="topicSelector">Basic Calculations (StoiChiometry)<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1iZsPI7YR32o0tbjrFUdbYK1wkDNbG_Ty&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/basic calculations.png" height=187.04px width=132.32px alt="Basic Calculations (StoiChiometry)"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1VwF2OIwSl_DrTqP-NzMnXD7HFP59Jghp&export=download' class="link">Practice Test</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1sr_Cozi7oaDm_5POFySPwZheOCv5quUf&export=download' class="link">Practice Test Answers</a></p>
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        <h3 style="text-align: center; font-size: 20px; font-family: tahoma; color: gold; background-color: rgb(8, 161, 89); padding: 15px;">Grade Eleven</h3>
+        <div class="grade11">
+        <div class="topicCon">
+            <h4 style="color: 'rgb(32, 170, 73)'">Acids, Bases and Salts<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1oLg-jhY0cTmjE7w9QybPpcoRwoiJBOU2&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/acids, bases and salts.png" height=187.04px width=132.32px alt="Acids, Bases and Salts"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1L29rfnD2lowtQZb5hRxrIdUsHwBVk1AO&export=download' class="link">Practice Test</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1HZTugtK1PKFVHZOz_yFB_pTtvD1BdNRC&export=download' class="link">Practice Test Answers</a></p>
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        <div class="topicCon">
+            <h4 class="topicSelector">The Mole Concept<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1X1PfkWPSEmF-Ble59k9WvroJoq3Kw_t6&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/the mole concept.png" height=187.04px width=132.32px alt="The Mole Concept"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1giNrbgOCXxeX9mFJqt6peleynMzjKpak&export=download' class="link">Practice Test</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1QXLN17N_zCLXftZWVJGqnD2hIpsT02sY&export=download' class="link">Practice Test Answers</a></p>
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        <div class="topicCon">
+            <h4 class="topicSelector">Metals<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1Ln7S7dzt4okVntvelguAcTXeYrW_Pd3N&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/metals.png" height=187.04px width=132.32px alt="Metals"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=17XUAAvnNkKbgF_iB4Cgd_bPkhErK7OsF&export=download' class="link">Practice Test</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=12zw_9QdbFC3nm7TI34o_8pAbKFG15-9u&export=download' class="link">Practice Test Answers</a></p>
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        <div class="topicCon">
+            <h4 class="topicSelector">Rates of Chemical Reactions<br/><span className='badge' class="new">FREE</span></h4>
+            <p class="image"><a href='https://drive.google.com/uc?id=1Ku2wcPSdKbtKoGWmzp1o_xk7Q51_n6LI&export=download'><img src="../../static/images/tutorials/sr/che/rates of chemical reactions.png" height=187.04px width=132.32px alt="Rates of Chemical Reactions"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+             <!-- <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p> -->
+            <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p> 
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        <div class="topicCon">
+            <h4 class="topicSelector">Periodic Table<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=1aDzefC6wHHdePBpd7PhSDiPcDV2UwzMe&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/the periodic table.png" height=187.04px width=132.32px alt="Periodic Table"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+             <!-- <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p> -->
+            <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p> 
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <h3 style="text-align: center; font-size: 20px; font-family: tahoma; color: red; background-color: rgb(255, 0, 255); padding: 15px;">Grade Twelve</h3>
+        <div class="grade12">
+        <div class="topicCon">
+            <h4 style="color: 'rgb(100, 100, 100)'">Redox Reactions<br/><span className='badge' class="new">FREE</span></h4>
+            <p class="image"><a href='https://drive.google.com/uc?id=1tjIF8qBPjUnzafiyF0HuT4AXxK7mw4BU&export=download'><img src="../../static/images/tutorials/sr/che/redox reactions.png" height=187.04px width=132.32px alt="Redox Reactions"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=1fqKmO5eyVEipG3hDPFjHW0bEaxE0g_dW&export=download' class="link">Practice Test</a><br/></p>
+            <p class="linkCon"><a href='https://drive.google.com/uc?id=13IJrOfwFVpC2Mm2wIlUo2PMGX9aZq015&export=download' class="link">Practice Test Answers</a></p>
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        <div class="topicCon">
+            <h4 class="topicSelector">Organic Chemistry<br/><span className='badge' class="price">4 ZMW</span></h4>
+            <p class="image"><!-- <a href='https://drive.google.com/uc?id=163xk3VEmnpxE7K9h8tKb76rz6P2bQvAQ&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/che/organic chemistry.png" height=187.04px width=132.32px alt="Organic Chemistry"/></a></p>
+             <!-- <p class="linkCon"><a href='' class="link">Brain Booster</a><br/></p>  -->
+             <!-- <p class="linkCon"><a href='' class="link">Practice Test</a><br/></p> -->
+            <!-- <p class="linkCon"><a href='' class="link">Practice Test Answers</a></p>  -->
+             <!-- <p> -->
+            <!-- <audio src='' controls="controls" style="width: '96%'"></audio>
+            <video src='' height={150} width={250} controls="controls"></video> -->
+            </p> 
+        </div>
+        </div>
+        
+    </main>
+{% endblock body %}

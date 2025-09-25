@@ -1,0 +1,94 @@
+.headerClass {
+    text-align: center; 
+    margin-bottom: 15px; 
+    background-image: linear-gradient(rgba(1,1,1,1), rgba(1,1,1,0)), url('../images/bg.jpg'); 
+    padding-bottom: 15px; 
+    padding-top: 20px; 
+    margin-top: 0px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    color: white;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+}
+
+.footer {
+    text-align: center; 
+    padding: 8px; 
+    margin-top: 2px; 
+    margin-bottom: 2px; 
+    background-image: linear-gradient(rgba(0,0,0,.89),rgba(0,0,0,1)) ,url('../../static/images/bg.jpg'); 
+    color: white; 
+    padding-bottom: 20px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    font-family: 'times new romans';
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 20vh;
+}
+
+/* Style the menu */
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* Menu links */
+.menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b1adad;
+    display: block;
+    transition: 0.3s;
+}
+
+/* On hover, change the color of links */
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+/* The close button */
+.menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the main content */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.btn-menu{
+    background-color: rgb(30, 43, 38);
+    margin: 3px;
+}
+
+.selected{
+    background-color: rgba(8, 214, 108, 0.721);
+    margin: 3px;
+}
+

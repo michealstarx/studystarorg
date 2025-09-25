@@ -1,0 +1,87 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| About Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="btn-menu" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="selected" onclick="closeMenu()">About</a>
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">ABOUT PAGE</h1>
+
+        <div className='body' style="margin-left: 4%; margin-right: 4%">
+            <h3 class="titles">What is STudy STar?</h3>
+            <p class="p">
+                <b>STudy STar</b> is a web app that is dedicated to helping students become better in every walk of their school life. The 
+                founder and CEO of has understood how to manage hormones effectively, prepare you for the exam and give personal advice if some is 
+                required. Any questions can also be asked through Facebook by clicking 
+                <a href='https://www.facebook.com/studystarofficial' class="href"> here</a>
+            </p>
+            <h3 class="titles">Why was STudy STar developed?</h3>
+            <p class="p">
+                <b>STudy STar</b> was created to help you walk out of the exam room with a smile on your face.
+            </p>
+            <h3 class="titles">Who was STudy STar created for?</h3>
+            <p class="p">
+                It was developed for:
+                <li>Senior Secondary School Student</li>
+                <li>1 <sup>st</sup> Year NQ Students</li>
+                <li>2 <sup>nd</sup> Year Med Students</li>
+            </p>
+            <h3 class="titles">Who developed STudy STar?</h3>
+            <p class="p">
+                <b>STudy STar</b> was developed by <b>Mubanga Micheal</b>.
+                You can follow, like and message <b>Dr. Micheal STar</b> on <a href="https://www.instagram.com/michealstarx/" class="href">instagram</a> or <a href="https://www.facebook.com/michealstarofficial" class="href">Facebook.</a>
+                You can also view his personal website by <a href="https://michealstar.onrender.com"><b>clicking here</b></a>
+                <p style="text-align: center;"><a href="../../static/images/my.jpg"><img src="../../static/images/my.jpg" alt="Micheal Mubanga" width=280px/></a></p>
+                <!-- <p style="text-align: center;"><a href={Micheal}><img src={Micheal} alt="Micheal Mubanga" height={316} width={316}/></a></p>
+                <p style="text-align: center;"><a href={Micheal2}><img src={Micheal2} alt="Micheal Mubanga" height={316} width={316}/></a></p> -->
+            </p>
+            <h3 class="titles">Motto</h3>
+            <p class="p">
+                Think beyond the clouds.
+            </p>
+            <h3 class="titles">Aim</h3>
+            <p class="p">
+                To help develop Zambia by increasing the number of educated people.
+            </p>
+            <h3 class="titles">Logo</h3>
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height=150px width=150px style="border-radius: 70px" alt="STudy STar Logo"/></div>
+            <br/><p style="text-align: center;"><a href='https://wa.me/+260975904433' target='__blank'><ImWhatsapp size={40} color='green'/></a></p>
+            <h3 class="titles">Email Us</h3>
+            <p class="p">
+                studystar@icloud.com
+            </p>
+        </div>
+
+    </main>
+{% endblock body %}

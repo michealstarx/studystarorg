@@ -1,0 +1,332 @@
+{% extends 'mainapp/basetutorials.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/biology.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Podcasts Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="selected" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">BIOLOGY PAGE</h1>
+        <div class='grade10' class="grade10">
+            <h3 style="text-align: center; font-size: 25px; font-family: 'tahoma sans-serif'; font-weight: bolder;  color: rgb(12, 245, 96); background-color: rgb(11, 53, 126); padding: 15px;">Grade Ten</h3>
+            <div class="topicCon10">
+              <h4 class="topicSelector"><x style='color: #0066FF'>Introduction to Biology</x><br/><span class='badge' class="new">FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1YwHGmlx1f6TUy_2IaJ4DYgAPxxQ14FP7&export=download'><img src="../../static/images/tutorials/sr/bio/introduction to biology.png" height="187.04px" width="132.32px" class="imb" alt="Introduction to Biology" class="products"/></a></p>
+              
+              <!-- <p class="linkCon"><NavLink to='/introduction_to_biology' class="link10BB">Brain Booster</NavLink><br/></p> -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1Ppt2KzOuIqxmjyUDce4Gg8w6lOCEwWlQ&export=download' class="link10PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1TzXZPPnWBQnW0uMADHjY6rdZAjlhup65&export=download' class="link10PTA">Practice Test Answers</a></p>
+              
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon10">
+              <h4 class="topicSelector">The Cell<br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1hwT3n2z8OjFJKWtfMSttgGJsX6kop2hq&export=download'>--><a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/the cell.png" height="187.04px" width="132.32px" class="imb" alt="The Cell" class="products"/></a></p>
+              
+              <!-- <p class="linkCon"><a href='/cell' class="link10BB">Brain Booster</a><br/></p> -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1WSRfliBoUbTVgl932TS6_1ehZPIvXbHI&export=download' class="link10PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1VXa_Rqy4W3cWh8ucf75X5WFPtx3X6TXw&export=download' class="link10PTA">Practice Test Answers</a></p>
+              
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon10">
+              <h4 class="topicSelector">Enzymes <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1-pBLKUiMrn0qqAgLb9JWoSrpB867Qj1D&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/enzymes.png" height="187.04px" width="132.32px" class="imb" alt="Enzymes" class="products"/></a></p>
+              <!-- <p class="linkCon"><a href='/enzymes' class="link10BB">Brain Booster</a><br/></p> -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1m3Fmrp4r9yuDyR7ljYANHPqqyeOyatqJ&export=download' class="link10PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1LJ5yCZbx-OvgWjwC1bI9GrGa1YWRMu0R&export=download' class="link10PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon10">
+              <h4 class="topicSelector">Nutrition in Plants <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1EUsBbNF00vnklGWvOIf1s9SAVp9WxCZx&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/nutrition in plants.png" height="187.04px" width="132.32px" class="imb" alt="Nutrition in Plants" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link10PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1wQ79dMB_sVbliuCLs18sbJ2xRcD880XF&export=download' class="link10PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1Gx78MzXh71r-sQ35t4Ck_rWYxtf6W5nu&export=download' class="link10PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon10">
+              <h4 class="topicSelector">Respiration and Gaseous Exchange<br/><span class='badge' style='color: yellow'>FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1Wi8nndsHcktP-b39hapsjNjn_X9mQIwA&export=download'><img src="../../static/images/tutorials/sr/bio/respiration and gaseous exchange.png" height="187.04px" width="132.32px" class="imb" alt="Respiration and Gaseous Exchange" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link10PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1UQFYa4T0t3adLYuw-YkhNqFtX25U0w6y&export=download' class="link10PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1cfphZj70MtAG7-zPME_jCiq1j2akavxh&export=download' class="link10PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon10">
+              <h4 class="topicSelector">Holozoic Nutrition <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1l-lOU-M4SRM4flssD2plquj72ri_DKyT&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/holozoic nutrition.png" height="187.04px" width="132.32px" class="imb" alt="Holozoic Nutrition" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link10PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1KQefnqtWtbjghjuGeIjU_A9M1HEbKwV2&export=download' class="link10PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1rLUnC1tdWPnGEv6r4ufrNvtBi5ahfhVK&export=download' class="link10PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon10">
+              <h4 class="topicSelector">Dentition <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1WT7w1BsNYVMXUkn5rgtMiTYvOIDFK8N5&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/dentition.png" height="187.04px" width="132.32px" class="imb" alt="Dentition" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link10PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1FHpolzcJMfj3OcPPMvSZfGfeXMzbofDR&export=download' class="link10PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1TDeuCt7P6FHzuCgjOAdUAvKyffnvrpgq&export=download' class="link10PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon10">
+              <h4 class="topicSelector">Health and Disease <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1oVUrOIZKjkJVfuaT8l4ZDisxYDRQtvQ4&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/health and disease.png" height="187.04px" width="132.32px" class="imb" alt="Health and Disease" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link10PTA">Brain Booster</a><br/></p>  -->
+               <p class="linkCon"><a href='' class="link10PTA">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='' class="link10PTA">Practice Test Answers</a></p> 
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class='grade11' class="grade11">
+            <h3 style="text-align: center; font-size: 25px; font-family: 'tahoma sans-serif'; font-weight: bolder;  color: gold; background-color: rgb(7, 217, 236); padding: 15px;">Grade Eleven</h3>
+            <div class="topicCon11">
+              <h4 class="topicSelector"><x style='color: #0066FF'>Excretion</x> <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1XosD2UeZvuAE8jvsOu7SnOgTU4ezQ-Ao&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/excretion.png" height="187.04px" width="132.32px" class="imb" alt="Excretion" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link11PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1PEBQKvDe0lhcyDBgnTWblWNvxdMlhuq8&export=download' class="link11PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1anWiyG2cruKOlX31YqpMWUSaDPCEafrE&export=download' class="link11PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon11">
+              <h4 class="topicSelector">Transport in Plants <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1dBRZyxcW3XW4L-EnoEZBg712cJH2kQc_&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/transport in plants.png" height="187.04px" width="132.32px" class="imb" alt="Transport in Plants" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link11PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1QnTXxzKv8wPCh0fgGTq3OcxIn270KjQ1&export=download' class="link11PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1FhhkNZsj1eq6WlO7FN8lyyqMcpt45Yl3&export=download' class="link11PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon11">
+              <h4 class="topicSelector">Transport in Man<br/><span class='badge' class="new">FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1sSzdIrjVyQHr2LLEP2xjgmDxDOXGIvT6&export=download'><img src="../../static/images/tutorials/sr/bio/transport in man.png" height="187.04px" width="132.32px" class="imb" alt="Transport in Man" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link11PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1C9nwTqS4-7M2NcAen6HRS8jRfBIX87Zm&export=download' class="link11PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=12m8_9Qos6IVoAz3RELg9Y-6sbhllgwgz&export=download' class="link11PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon11">
+              <h4 class="topicSelector">Homeostasis <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=19RBlWgWCf9YqvgbLmGA96dwTW--MVkBx&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/homeostasis.png" height="187.04px" width="132.32px" class="imb" alt="Homeostasis" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link11PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1f7rty-NJ4ktqxrFA7jqFZHgZ1fBsY7n7&export=download' class="link11PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=17T5COcpN-IaQXeJ86u00OJU1pVlFFBMX&export=download' class="link11PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon11">
+              <h4 class="topicSelector">Coordination <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1bSA_QZehzD0yzULNYkE7XDhisQjo4HLc&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/coordination.png" height="187.04px" width="132.32px" class="imb" alt="Coordination" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link11PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1qPUv9ahuN1xbzc_ax91WkEuNBWLawy4t&export=download' class="link11PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1X-nQvFqc93gXRCEkDUFd7cmyCjM-Mk5a&export=download' class="link11PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon11">
+              <h4 class="topicSelector">Nervous System<br/><span class='badge' class="new">FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1l8--JZxEGhACzPGR_OsrUOlJah_e5W43&export=download'><img src="../../static/images/tutorials/sr/bio/the nervous system.png" height="187.04px" width="132.32px" class="imb" alt="Nervous System" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' class="link11PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1vGYd3ChnGTb9S_Zlft1vglOBIljZHhS_&export=download' class="link11PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=18PBrSopJrVjKooGHvhTi9m_ZxyGw_eLH&export=download' class="link11PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class='grade12' class="grade12">
+            <h3 style="text-align: center; font-size: 25px; font-family: tahoma sans-serif; font-weight: bolder;  color: red; background-color: rgb(0, 210, 144); padding: 15px;">Grade Twelve</h3>
+            <div class="topicCon12">
+              <h4 class="topicSelector"><x style='color: #0066FF'>Reproduction in Plants</x> <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1bJkfhekByOjtRYwjb2G-Ik-OCIgZOIqT&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/reproduction in plants.png" height="187.04px" width="132.32px" class="imb" alt="Reproduction in Plants" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' id="link12PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=10CMknFFiJeT9SlngLe1VqxcOJFuAlHc5&export=download' id="link12PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1G4wVY-QwLta0vhS0Pdmoo4ISxSC1Dro-&export=download' id="link12PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon12">
+              <h4 class="topicSelector">Reproduction in Animals <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1jp0x4HiBod7Z3eYoRupH6FGM6PC1S8Dp&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/reproduction in man.png" height="187.04px" width="132.32px" class="imb" alt="Reproduction in Animals" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' id="link12PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1GakfyFkztAWhxZQ9x0RQm7FGFNlWMGkB&export=download' id="link12PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1O4Ni_C8dwbIHb4d9mI9nTYNUxoPHyY2x&export=download' id="link12PTA">Practice Test Answers</a></p> 
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon12">
+              <h4 class="topicSelector">Genetics<br/><span class='badge' style='color: yellow'>FREE</span></h4>
+              <p class="image"><a href='https://drive.google.com/uc?id=1FL42FYsZHYQ1a6FKvXYccgaH7b4bDbDH&export=download'><img src="../../static/images/tutorials/sr/bio/genetics.png" height="187.04px" width="132.32px" class="imb" alt="Genetics" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' id="link12PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=12ogyS73Yik997UY-VIjGRFgirYMvLxqH&export=download' id="link12PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1tyBjjAepNh_SfUVk37RYQwIK-6H7iesB&export=download' id="link12PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio> 
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+      
+            <div class="topicCon12">
+              <h4 class="topicSelector">Tropism and Taxism <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1YFXguYwn0nmh-MtXSMXevePGul1EJvrh&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/tropic and taxic responses.png" height="187.04px" width="132.32px" class="imb" alt="Tropism and Taxism" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' id="link12PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1Lqp6snjmqbP5W6uzmwk0TxvVexXhZMDw&export=download' id="link12PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1B4kFSRZEyphpXVTV4M-4MF2dVxQS_c24&export=download' id="link12PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon12">
+              <h4 class="topicSelector">Growth and Development <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1b1ZeD5RRbld4DCXqtd7F-6lKwltFmnZt&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/growth and development.png" height="187.04px" width="132.32px" class="imb" alt="Growth and Development" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' id="link12PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1dEr20YjLaPTmIJtqwu7h3hNjgaFLvXoZ&export=download' id="link12PT">Practice Test</a><br/></p>
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1tRZIkxp_106cvs9kdbf1Pa-sGoq4poUC&export=download' id="link12PTA">Practice Test Answers</a></p>
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+      
+            <div class="topicCon12">
+              <h4 class="topicSelector">Ecology <br/><span class='badge' class="price">4 ZMW</span></h4>
+              <p class="image"><!-- <a href='https://drive.google.com/uc?id=1NubwXfgdUjti1Rm7CAzl35RGochD21Po&export=download'>--> <a href="https://wa.me/+260975904433"><img src="../../static/images/tutorials/sr/bio/ecology.png" height="187.04px" width="132.32px" class="imb" alt="Ecology" class="products"/></a></p>
+               <!-- <p class="linkCon"><a href='' id="link12PTA">Brain Booster</a><br/></p>  -->
+              <p class="linkCon"><a href='https://drive.google.com/uc?id=1V0JRKnkh8Ybgz5_h_Lkx295DlngJlHHu&export=download' id="link12PT">Practice Test</a><br/></p>
+               <p class="linkCon"><a href='' id="link12PTA">Practice Test Answers</a></p> 
+               <!-- <p>
+                <audio src='' controls="controls" style='width: 96%'></audio>
+                <video src='' height={150} width={250} controls="controls"></video>
+              </p>  -->
+            </div>
+            </div>
+    </main>
+{% endblock body %}

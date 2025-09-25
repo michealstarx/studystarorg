@@ -1,0 +1,68 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Home Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+ 
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="selected" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="btn-menu" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">HOME PAGE</h1>
+        <p class="quote">
+            "Start now, 1 year from now you will look back and wish you started" - Warren Buffet
+        </p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="subTitle">LATEST</h4>
+                    <!-- <p><b>No new items so far</b></p> -->
+                    <div style="margin: 10">
+                        <p style='text-align: center; font-weight: bolder;'>
+                            <a href='https://www.studystar.me/smartify/31'>Becoming the best student. DAY 20: Perfection</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="subTitle">FREE PRODUCTS</h4>
+                        <div class="products">
+                            <a href='https://drive.google.com/uc?id=1sSzdIrjVyQHr2LLEP2xjgmDxDOXGIvT6&export=download' class="a"><img src='../../static/images/tutorials/sr/bio/transport in man.png' height='187.04px' width='132.32px' alt="Transport in Man" class='img'/></a>
+                            <a href='https://drive.google.com/uc?id=1RuwSCSwQJ4wryoeM0z2vDFQ_jjhzu1pw&export=download' class="a"><img src='../../static/images/tutorials/sr/che/atomic structure.png' height='187.04px' width='132.32px' alt="Atomic Structure" class='img'/></a>
+                            <a href='https://drive.google.com/uc?id=1hVD6VN5o86X_8zJItSU4KysWjAoWPiho&export=download' class="a"><img src='../../static/images/tutorials/sr/eng/comprehension.png' height='187.04px' width='132.32px' alt="Comprehension" class='img'/></a>
+                            <a href='https://drive.google.com/uc?id=10iwBl2Z9orXFty39UFCOZPSwkaakDL7s&export=download' class="a"><img src='../../static/images/tutorials/sr/mat/introduction to mathematics.png' height='187.04px' width='132.32px' alt="Introduction to Mathematics" class='img'/></a>
+                            <a href='https://drive.google.com/uc?id=1Y2_P9h9nfLVRll8bzksaj6fn9IdhBPPy&export=download' class="a"><img src='../../static/images/tutorials/sr/phy/mechanics.png' height='187.04px' width='132.32px' alt="Mechanics" class='img'/></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock body %}
