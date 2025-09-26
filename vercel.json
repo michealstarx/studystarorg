@@ -1,13 +1,13 @@
 {
-  "builds": [{
-      "src": "studystarorg/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambaSize": "15mb", "runtime": "python3.9.12" }
-  }],
-  "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "studystarorg/wsgi.py"
-      }
-  ]
+    "builds": [{
+        "src": "studystarorg/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambaSize": "15mb", "runtime": "python3.12.1" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "studystarorg/wsgi.py"
+        }
+    ]
 }
