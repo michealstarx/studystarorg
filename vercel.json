@@ -12,10 +12,6 @@
         "config": {
           "distDir": "staticfiles_build"
         }
-      },
-      { 
-        "src": "Dockerfile", 
-        "use": "@vercel/docker" 
       }
     ],
     "routes": [
