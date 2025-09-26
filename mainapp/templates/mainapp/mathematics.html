@@ -1,5 +1,15 @@
 {% extends 'mainapp/basetutorials.html' %}
 {% load static %}
+{% block seo %}
+  <meta name="description" content="STudy STar tutorials page| Mathematics" />
+  <meta name="keywords" content="Introduction to Mathematics, Sets, Algebra, Indices, Matrices, Simultaneous Equations, Travel Graphs, Similarity and Congruence, Angles, Bearings, Coordinate Geometry, Functions, Variation, Quadratic Equations, Quadratic Functions, Arithmetic Progression, Geometric Progression, Circle Properties, Mensuration, Vectors, Probability, Computer (PseudoCode and Flow Charts), Earth Geometry, Trigonometry, calculus: Differentiation, calculus: Integration" />
+  <meta property="og:title" content="STudy STar: Mathematics tutorials" />
+  <meta property="og:description" content="STudy STar tutorials page| Mathematics" />
+  <meta property="og:image" content="http://www.studystar.me/static/media/mathematics.4572d45d14830ff3dbed.jpeg" />
+  <meta property="og:url" content="https://www.studystar.me" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href='/mathematics'/>
+{% endblock seo %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/mathematics.css' %}"/>
 {% endblock link %}

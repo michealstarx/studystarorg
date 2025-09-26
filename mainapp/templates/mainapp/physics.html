@@ -1,5 +1,15 @@
 {% extends 'mainapp/basetutorials.html' %}
 {% load static %}
+{% block seo %}
+          <meta name="description" content="STudy STar tutorials page| Physics" />
+          <meta name="keywords" content="Introduction to Physics, Mass, Weight, Volume & Density, Forces, Mechanics, Moments of a Force, Thermal Physics, Gas Laws, Waves, Light, Work, Energy and Power, Simple Machines, Magnetism, Electromagnetism, Electricity, Electromagnetic Induction, RadioActivity" />
+          <meta property="og:title" content="STudy STar: Physics tutorials" />
+          <meta property="og:description" content="STudy STar tutorials page| Physics" />
+          <meta property="og:image" content="http://www.studystar.me/static/media/physics.cddc0d4c85ae9e50beb9.jpeg" />
+          <meta property="og:url" content="https://www.studystar.me" />
+          <meta property="og:type" content="website" />
+          <link rel="canonical" href='/physics'/>
+{% endblock seo %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/physics.css' %}"/>
 {% endblock link %}

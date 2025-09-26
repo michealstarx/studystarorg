@@ -1,5 +1,15 @@
 {% extends 'mainapp/basetutorials.html' %}
 {% load static %}
+{% block seo %}
+    <meta name="description" content="STudy STar tutorials page| Chemistry" />
+    <meta name="keywords" content="Introduction to Chemistry, Apparatus Techniques, Separation Techniques, Atomic Structure, Bonding, Elements, Mixtures and Compounds, Basic Calculations (StoiChiometry), Acids, Bases and Salts, The Mole Concept, Metals, Rates of Chemical Reactions, Periodic Table, Redox Reactions, Organic Chemistry" />
+    <meta property="og:title" content="STudy STar: Chemistry tutorials" />
+    <meta property="og:description" content="STudy STar tutorials page| Chemistry" />
+    <meta property="og:image" content="http://www.studystar.me/static/media/chemistry.5f50e1c84d93568a4ea2.jpeg" />
+    <meta property="og:url" content="https://www.studystar.me" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href='/chemistry'/>
+{% endblock seo%}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/chemistry.css' %}"/>
 {% endblock link %}

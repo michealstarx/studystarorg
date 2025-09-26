@@ -1,5 +1,17 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
+
+{% block seo %}
+    <meta name="description" content="STudy STar books are short and precise meant to help you understand things in a simple and straightforward way." />
+    <meta name="keywords" content="study star, studystar, studystar.me, studystar.org, From 21% to 100%, How to Study Effectively and Efficiently, Why most students fail, What just happened" />
+    <meta property="og:title" content="STudy STar Books" />
+    <meta property="og:description" content="STudy STar books are short and precise meant to help you understand things in a simple and straightforward way." />
+    <meta property="og:image" content="http://www.studystar.me/static/media/how_to.3ac52e6d57d22ec455d7.jpg" />
+    <meta property="og:url" content="https://www.studystar.me" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href='/books'/> 
+{% endblock seo %}
+
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/books.css' %}"/>
 {% endblock link %}

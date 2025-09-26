@@ -1,5 +1,16 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
+{% block seo %}
+                    <meta name="description" content={{item.introFirst}}/>
+                    <meta name="keywords" content={{item.secondParagraphTwentyeight}} />
+                    <meta property="og:title" content={{item.title}} />
+                    <meta property="og:description" content={{item.introFirst}} />
+                    <meta property="og:image" content={{item.firstImage}} />
+                    <meta property="og:url" content="https://www.studystar.me" />
+                    <meta property="og:type" content="website" />
+                    <link rel="canonical" href={page}/> 
+{% endblock seo%}
+
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/smartifyDetails.css' %}"/>
 {% endblock link %}

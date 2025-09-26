@@ -1,5 +1,15 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
+{% block seo %}
+                <meta name="description" content="STudy STar podcast page| Listen to things that will grow your mind and inspire you to make a change in the world" />
+                <meta name="keywords" content="Mindset Change, The importance of planning" />
+                <meta property="og:title" content="STudy STar" />
+                <meta property="og:description" content="STudy STar podcast page| Listen to things that will grow your mind and inspire you to make a change in the world" />
+                <meta property="og:image" content="http://www.studystar.me/tatic/media/morning.6a3942cad7992c4e0f60.jpg" />
+                <meta property="og:url" content="https://www.studystar.me" />
+                <meta property="og:type" content="website" />
+                <link rel="canonical" href='/podcasts'/> 
+{% endblock seo %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/podcasts.css' %}"/>
 {% endblock link %}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
     <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
+    {% block seo %}{% endblock seo %}
     {% block link %}{% endblock link%}
     {% block title %}{% endblock title%}
     {% block metatags %}{% endblock metatags %}
