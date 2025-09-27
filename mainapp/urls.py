@@ -20,4 +20,5 @@ urlpatterns = [
     path('about/', aboutPage, name='aboutPage'),
     path('networkError/', networkErrorPage, name='networkErrorPage'),
     path('sitemap.txt/', sitemap_txt, name='sitemap_txt'),
+    path('sitemap.txt', sitemap_txt, name='sitemap_txt'),
 ]
