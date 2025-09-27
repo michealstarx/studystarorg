@@ -1,6 +1,8 @@
 import requests
 from requests.exceptions import ConnectionError
 from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.urls import reverse
 
 
 
@@ -61,6 +63,36 @@ def physicsPage(request):
     return render(request, 'mainapp/physics.html')
 def networkErrorPage(request):
     return render(request, 'mainapp/networkErrorPage.html')
+def sitemap_txt(request):
+    urls = [
+        request.build_absolute_uri(reverse('homePage')),
+        request.build_absolute_uri(reverse('booksPage')),
+        request.build_absolute_uri(reverse('tutoPage')),
+        request.build_absolute_uri(reverse('tutorialsPage')),
+        request.build_absolute_uri(reverse('gradePage')),
+        request.build_absolute_uri(reverse('biologyPage')),
+        request.build_absolute_uri(reverse('chemistryPage')),
+        request.build_absolute_uri(reverse('englishPage')),
+        request.build_absolute_uri(reverse('mathematicsPage')),
+        request.build_absolute_uri(reverse('physicsPage')),
+        request.build_absolute_uri(reverse('videosPage')),
+        request.build_absolute_uri(reverse('podcastsPage')),
+        request.build_absolute_uri(reverse('smartifyPage')),
+        request.build_absolute_uri(reverse('aboutPage'))
+        
+    ]
+    try:
+        response = requests.get("https://michealzsd.pythonanywhere.com/List/")
+        response.raise_for_status()
+        data = response.json()
 
-def sitemapPage(request):
-    return render(request, 'mainapp/sitemap.txt')
+        for item in data:
+            if 'id' in item:
+                detail_url = request.build_absolute_uri(reverse('smartifyDetailsPage', kwargs={'id': item['id']}))
+                urls.append(detail_url)
+    except Exception as e:
+        # Log or handle API failure gracefully
+        pass
+    sitemap_content = "\n".join(urls)
+    return HttpResponse(sitemap_content, content_type="text/plain")
+

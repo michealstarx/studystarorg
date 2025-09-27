@@ -1,8 +1,0 @@
-<meta name="description" content="STudy STar home page| STudy STar is an online learning platform for grade 10 to 12's all over zambia. It has all the necessary information required to make any student achieve A+ grades in 3 weeks." />
-<meta name="keywords" content="study star, star, studystar, studystar.me, studystar.org, ecz, past papers" />
-<meta property="og:title" content="STudy STar" />
-<meta property="og:description" content="STudy STar home page, be prepared for the transition in your academic journey." />
-<meta property="og:image" content="http://www.studystar.me/static/media/survey3.199ee6255fe100dfd14e.jpg" />
-<meta property="og:url" content="https://www.studystar.me" />
-<meta property="og:type" content="website" />
-<link rel="canonical" href='/'/>
