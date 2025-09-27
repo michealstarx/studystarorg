@@ -61,3 +61,6 @@ def physicsPage(request):
     return render(request, 'mainapp/physics.html')
 def networkErrorPage(request):
     return render(request, 'mainapp/networkErrorPage.html')
+
+def sitemapPage(request):
+    return render(request, 'mainapp/sitemap.txt')

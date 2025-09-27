@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import homePage, booksPage, tutoPage, tutorialsPage, gradePage, biologyPage, chemistryPage, englishPage, mathematicsPage, physicsPage, videosPage, podcastsPage, smartifyPage, smartifyDetailsPage, aboutPage, networkErrorPage
+from .views import sitemapPage, homePage, booksPage, tutoPage, tutorialsPage, gradePage, biologyPage, chemistryPage, englishPage, mathematicsPage, physicsPage, videosPage, podcastsPage, smartifyPage, smartifyDetailsPage, aboutPage, networkErrorPage
 
 urlpatterns = [
     path('', homePage, name='homePage'),
@@ -19,4 +19,5 @@ urlpatterns = [
     path('smartifyData/<int:id>/', smartifyDetailsPage, name='smartifyDetailsPage'),
     path('about/', aboutPage, name='aboutPage'),
     path('networkError/', networkErrorPage, name='networkErrorPage'),
+    path('sitemap.txt/', sitemapPage, name="sitemapPage")
 ]
