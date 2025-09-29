@@ -21,4 +21,6 @@ urlpatterns = [
     path('networkError/', networkErrorPage, name='networkErrorPage'),
     path('sitemap.txt/', sitemap_txt, name='sitemap_txt'),
     path('sitemap.txt', sitemap_txt, name='sitemap_txt'),
+    path('sitemap.xml/', sitemap_txt, name='sitemap_txt'),
+    path('sitemap.xml', sitemap_txt, name='sitemap_txt'),
 ]
