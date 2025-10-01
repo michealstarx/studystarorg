@@ -1,0 +1,126 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/tuto.css' %}"/>
+{% endblock link %}
+{% block title%}
+    <title>STudy STar| Images Page</title>
+{% endblock title %}
+{% block body %}
+    <main>
+        <!-- Start of Menu -->
+
+        <!-- The sliding menu -->
+        <div id="menu" class="menu">
+            <div style="text-align: center;"><img src="../../static/images/logo.png" height="45px" width="45px" style="border-radius: 45px;"/></div>
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="{% url 'homePage' %}" class="btn-menu" onclick="closeMenu()">Home</a>
+            <a href="{% url 'booksPage' %}" class="btn-menu" onclick="closeMenu()">Books</a>
+            <a href="{% url 'tutorialsPage' %}" class="selected" onclick="closeMenu()">Tutorials</a>
+            <a href="{% url 'videosPage' %}" class="btn-menu" onclick="closeMenu()">Videos</a>
+            <a href="{% url 'podcastsPage' %}" class="btn-menu" onclick="closeMenu()">Podcasts</a>
+            <a href="{% url 'smartifyPage' %}" class="btn-menu" onclick="closeMenu()">Smartify</a>
+            <a href="{% url 'aboutPage' %}" class="btn-menu" onclick="closeMenu()">About</a>
+            <div class="label" style="text-align: center;">&copy; 2025 STudy STar</div>
+        </div>
+
+        <!-- Page content -->
+        <div id="main" style="text-align: center;">
+            <span style="font-size:24px; cursor:pointer" onclick="openMenu()">
+                <b style="border: 1px solid black; border-radius: 30px; margin: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    &#9776;
+                </b>
+            </span>
+        </div>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- End of Menu -->
+        <h1 class="h1">IMAGES PAGE</h1>
+        <div style="text-align: center;">
+            <img src="../../static/images/smartify/afternoon.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(1).jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(1).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(1).png" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(1).webp" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(10).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(11).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(12).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(13).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(14).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(15).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(16).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(17).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(18).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(2).jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(2).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(2).webp" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(3).jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(3).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(4).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(5).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(6).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(7).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(8).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/best_student_(9).jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/biology.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/brain.PNG" height=150px width=150px/>
+            <img src="../../static/images/smartify/brain_1.JPG" height=150px width=150px/>
+            <img src="../../static/images/smartify/brain_2.JPG" height=150px width=150px/>
+            <img src="../../static/images/smartify/chemistry.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/clock1.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/clock2.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/clock3.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/discipline.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/discipline_1.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/discipline.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/dontfeel.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/dontfeel2.JPG" height=150px width=150px/>
+            <img src="../../static/images/smartify/effort1.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/effort2.png" height=150px width=150px/>
+            <img src="../../static/images/smartify/effort3.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/end.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/english.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/how_to.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/mathematics.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/morning.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/night.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/osa.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/osai.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/osas.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/physics.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/self-discipline.png" height=150px width=150px/>
+            <img src="../../static/images/smartify/spaced_repetition.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/spaced_repetition1.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/spaced_repetition2.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/survey1.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/survey2.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/survey3.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/the_seven.jpeg" height=150px width=150px/>
+            <img src="../../static/images/smartify/theseven.jpg" height=150px width=150px/>
+            <img src="../../static/images/smartify/theseven21.png" height=150px width=150px/>
+            <img src="../../static/images/smartify/tt.jpeg" height=150px width=150px/>
+            <img src="../../static/images/bg.jpg" height=150px width=150px/>
+            <img src="../../static/images/image.jpg" height=150px width=150px/>
+            <img src="../../static/images/logo.png" height=150px width=150px/>
+            <img src="../../static/images/my.jpg" height=150px width=150px/>
+            <img src="../../static/images/books/from.png" height=150px width=150px/>
+            <img src="../../static/images/books/How_I_did_it.png" height=150px width=150px/>
+            <img src="../../static/images/books/hts.png" height=150px width=150px/>
+            <img src="../../static/images/books/why_most_students_fail.png" height=150px width=150px/>
+            <img src="../../static/images/books/wjh.png" height=150px width=150px/>
+            <img src="../../static/images/Social/Ad_Campaign.jpg" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+            <img src="../../static/images" height=150px width=150px/>
+
+
+        </div>
+    </main>
+{% endblock body %}

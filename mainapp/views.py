@@ -96,3 +96,5 @@ def sitemap_txt(request):
     sitemap_content = "\n".join(urls)
     return HttpResponse(sitemap_content, content_type="text/plain")
 
+def images(request):
+    return render(request, 'mainapp/images.html')

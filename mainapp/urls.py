@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import sitemap_txt, homePage, booksPage, tutoPage, tutorialsPage, gradePage, biologyPage, chemistryPage, englishPage, mathematicsPage, physicsPage, videosPage, podcastsPage, smartifyPage, smartifyDetailsPage, aboutPage, networkErrorPage
+from .views import images, sitemap_txt, homePage, booksPage, tutoPage, tutorialsPage, gradePage, biologyPage, chemistryPage, englishPage, mathematicsPage, physicsPage, videosPage, podcastsPage, smartifyPage, smartifyDetailsPage, aboutPage, networkErrorPage
 
 urlpatterns = [
     path('', homePage, name='homePage'),
@@ -23,4 +23,5 @@ urlpatterns = [
     path('sitemap.txt', sitemap_txt, name='sitemap_txt'),
     path('sitemap.xml/', sitemap_txt, name='sitemap_txt'),
     path('sitemap.xml', sitemap_txt, name='sitemap_txt'),
+    path('images/', images, name='images'),
 ]
